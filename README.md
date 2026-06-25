@@ -8,6 +8,9 @@
 записывает CIDR-диапазоны или домены в JSON, который можно использовать в
 настройках маршрутизации Amnezia.
 
+Утилита запускается из командной строки: откройте терминал в папке с
+исполняемым файлом и выполните `./routing_list_util.exe` с нужными флагами.
+
 Если нужен список маршрутизации для Windows или iOS, обычно лучше использовать
 CIDR-диапазоны: запускайте генерацию IP через `--geoip`. Такой список
 собирается из `geoip.dat` и подходит для платформ, где надёжнее маршрутизировать
@@ -185,6 +188,9 @@ Small Go utility for preparing routing lists for split tunneling in Amnezia VPN.
 It downloads `geoip.dat` or `geosite.dat` from
 `runetfreedom/russia-v2ray-rules-dat`, extracts selected categories, and writes
 CIDR ranges or domains to JSON that can be used in Amnezia routing settings.
+
+The utility is run from the command line: open a terminal in the directory with
+the executable and run `./routing_list_util.exe` with the needed flags.
 
 For Windows and iOS routing lists, CIDR ranges are usually the better choice:
 generate an IP list with `--geoip`. This uses `geoip.dat` and is a good fit for
